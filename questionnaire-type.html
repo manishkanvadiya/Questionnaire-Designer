@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionnaire Designer</title>
+
+    <!-- bs -->
+    <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.3/font/bootstrap-icons.min.css"
+        integrity="sha512-YzwGgFdO1NQw1CZkPoGyRkEnUTxPSbGWXvGiXrWk8IeSqdyci0dEDYdLLjMxq1zCoU0QBa4kHAFiRhUL3z2bow=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- css -->
+    <link rel="stylesheet" href="assets/scss/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <i class="">f<sub>(w)</sub></i>
+                    <span>Questionnaire Designer</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item profile">
+                            <img src="assets/img/user1.png" alt="">
+                            <span class="mx-3">Arpit Takura</span>
+                            <button class="btn btn-outline-light">logout</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- main -->
+    <main>
+        <div class="container">
+            <!-- breadcrumb -->
+            <div class="row align-items-center border-bottom border-2 pb-4 mb-lg-4 breadcrumb">
+
+                <div class="col-12 col-md-4 mb-2 mb-md-0">
+                    <div class="">
+                        <h3 class="title-color text-capitalize ">Questionnaire Type</h3>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 mb-2 mb-md-0">
+                    <div id="search-btn" class="bg-light">
+                        <input type="search" class="form-control border-0 shadow-none bg-light"
+                            placeholder="Search by Questionnaire type">
+                        <a href="#" class="text-dark shadow-none p-2">
+                            <i class="bi bi-search"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-2 mb-2 mb-md-0">
+                    <a class="btn btn-primary btn-large w-100 text-uppercase fw-bold primary-bg" data-bs-toggle="modal"
+                        data-bs-target="#addQuestionPop"> create new </a>
+                </div>
+            </div>
+            <!-- breadcrumb -->
+            <!-- main-container -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="table-responsive">
+                        <table class="table text-center text-capitalize table-max-width">
+                            <thead class="text-capitalize border-0">
+                                <th>
+                                    <input class="form-check-input rounded-0 p-2" type="checkbox" value=""
+                                        id="flexCheckDefault">
+                                </th>
+                                <th>id</th>
+                                <th class="primary-color">name</th>
+                                <th class="primary-color">ansers type</th>
+                                <th class="primary-color">hind</th>
+                                <th class="primary-color">deleted</th>
+                                <th>action</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <input class="form-check-input rounded-0 p-2" type="checkbox" value=""
+                                            id="flexCheckDefault">
+                                    </td>
+                                    <td>1</td>
+                                    <td>
+                                        single select
+                                    </td>
+                                    <td>
+                                        <div class="primary-color text-decoration-underline">row-wise</div>
+                                    </td>
+                                    <td>
+                                        <div class="primary-color text-decoration-underline">please select one</div>
+                                    </td>
+                                    <td>
+                                        <i class="bi bi-dash-circle-fill text-danger fs-5" title="Inactive"></i>
+
+                                    </td>
+                                    <td>
+                                        <span> <a href="#" class="primary-color">Edit</a></span>
+                                        <span class="text-muted px-2 d-none d-md-inline-block">|</span>
+                                        <span> <a href="#" class="text-danger">Delete</a></span>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input class="form-check-input rounded-0 p-2" type="checkbox" value=""
+                                            id="flexCheckDefault">
+                                    </td>
+                                    <td>1</td>
+                                    <td>
+                                        single select
+                                    </td>
+                                    <td>
+                                        <div class="primary-color text-decoration-underline">row-wise</div>
+                                    </td>
+                                    <td>
+                                        <div class="primary-color text-decoration-underline">please select one</div>
+                                    </td>
+                                    <td>
+                                        <i class="bi bi-dash-circle-fill text-danger fs-5" title="Inactive"></i>
+
+                                    </td>
+                                    <td>
+                                        <span> <a href="#" class="primary-color">Edit</a></span>
+                                        <span class="text-muted px-2 d-none d-md-inline-block">|</span>
+                                        <span> <a href="#" class="text-danger">Delete</a></span>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input class="form-check-input rounded-0 p-2" type="checkbox" value=""
+                                            id="flexCheckDefault">
+                                    </td>
+                                    <td>1</td>
+                                    <td>
+                                        single select
+                                    </td>
+                                    <td>
+                                        <div class="primary-color text-decoration-underline">row-wise</div>
+                                    </td>
+                                    <td>
+                                        <div class="primary-color text-decoration-underline">please select one</div>
+                                    </td>
+                                    <td>
+                                        <i class="bi bi-dash-circle-fill text-danger fs-5" title="Inactive"></i>
+
+                                    </td>
+                                    <td>
+                                        <span> <a href="#" class="primary-color">Edit</a></span>
+                                        <span class="text-muted px-2 d-none d-md-inline-block">|</span>
+                                        <span> <a href="#" class="text-danger">Delete</a></span>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input class="form-check-input rounded-0 p-2" type="checkbox" value=""
+                                            id="flexCheckDefault">
+                                    </td>
+                                    <td>1</td>
+                                    <td>
+                                        single select
+                                    </td>
+                                    <td>
+                                        <div class="primary-color text-decoration-underline">row-wise</div>
+                                    </td>
+                                    <td>
+                                        <div class="primary-color text-decoration-underline">please select one</div>
+                                    </td>
+                                    <td>
+                                        <i class="bi bi-dash-circle-fill text-danger fs-5" title="Inactive"></i>
+
+                                    </td>
+                                    <td>
+                                        <span> <a href="#" class="primary-color">Edit</a></span>
+                                        <span class="text-muted px-2 d-none d-md-inline-block">|</span>
+                                        <span> <a href="#" class="text-danger">Delete</a></span>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input class="form-check-input rounded-0 p-2" type="checkbox" value=""
+                                            id="flexCheckDefault">
+                                    </td>
+                                    <td>1</td>
+                                    <td>
+                                        single select
+                                    </td>
+                                    <td>
+                                        <div class="primary-color text-decoration-underline">row-wise</div>
+                                    </td>
+                                    <td>
+                                        <div class="primary-color text-decoration-underline">please select one</div>
+                                    </td>
+                                    <td>
+                                        <i class="bi bi-dash-circle-fill text-danger fs-5" title="Inactive"></i>
+
+                                    </td>
+                                    <td>
+                                        <span> <a href="#" class="primary-color">Edit</a></span>
+                                        <span class="text-muted px-2 d-none d-md-inline-block">|</span>
+                                        <span> <a href="#" class="text-danger">Delete</a></span>
+                                    </td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!-- main-container -->
+        </div>
+    </main>
+
+    <!-- script -->
+      <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

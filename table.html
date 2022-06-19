@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionnaire Designer</title>
+
+    <!-- bs -->
+    <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.3/font/bootstrap-icons.min.css"
+        integrity="sha512-YzwGgFdO1NQw1CZkPoGyRkEnUTxPSbGWXvGiXrWk8IeSqdyci0dEDYdLLjMxq1zCoU0QBa4kHAFiRhUL3z2bow=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- css -->
+    <link rel="stylesheet" href="assets/scss/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <i class="">f<sub>(w)</sub></i>
+                    <span>Questionnaire Designer</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item profile">
+                            <img src="assets/img/user1.png" alt="">
+                            <span class="mx-3">Arpit Takura</span>
+                            <button class="btn btn-outline-light">logout</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- main -->
+    <main>
+        <div class="container">
+            <!-- breadcrumb -->
+            <div class="row align-items-center border-bottom border-2 pb-4 mb-lg-4 breadcrumb">
+                <div class="col-12 col-md-2 mb-2 mb-md-0">
+                    <select class="form-select form-control bg-light border-0" aria-label="Default select example">
+                        <option selected>All Questionnaires</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+                <div class="col-12 col-md-2 mb-2 mb-md-0">
+                    <div class="text-end text-center">
+                        <span><b>479</b> Questionnaires</span>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 mb-2 mb-md-0">
+                    <div id="search-btn" class="bg-light">
+                        <input type="search" class="form-control border-0 shadow-none bg-light"
+                            placeholder="Search by Questionnaire ...">
+                        <a href="#" class="text-dark shadow-none p-2">
+                            <i class="bi bi-search"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-2 mb-2 mb-md-0">
+                    <a class="btn btn-primary btn-large w-100 text-uppercase fw-bold primary-bg" data-bs-toggle="modal"
+                        data-bs-target="#addQuestionPop"> create new </a>
+                </div>
+            </div>
+            <!-- breadcrumb -->
+            <!-- main-container -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="table-responsive">
+                        <table class="table text-center text-capitalize">
+                            <thead class="text-capitalize border-0">
+                                <th></th>
+                                <th>Questionnaire Name</th>
+                                <th>Client Name</th>
+                                <th>Project Number</th>
+                                <th>project lead/owner</th>
+                                <th>last accessed </th>
+                                <th>action</th>
+                            </thead>
+                            <tbody class="">
+                                <tr>
+                                    <td>
+                                        <div class="mark-star">
+                                            <i class="bi bi-star"></i>
+                                        </div>
+                                    </td>
+                                    <td>developer panel survey</td>
+                                    <td>Client ABC</td>
+                                    <td>PRJ-100</td>
+                                    <td>Nikesh Gupta</td>
+                                    <td>27 Jan 2022</td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <a href="#" class="cus-border" data-bs-toggle="dropdown"
+                                                data-bs-auto-close="true" aria-expanded="false">
+                                                <i class="bi bi-three-dots" id="defaultDropdown"></i>
+                                            </a>
+                                            <div class="dropdown-menu navbar-dropdown preview-list">
+                                                <a class="dropdown-item" href="#">export</a>
+                                                <a class="dropdown-item" href="#">share</a>
+                                                <a class="dropdown-item" href="#">copy</a>
+                                                <a class="dropdown-item" href="#">freeze numbering</a>
+                                                <a class="dropdown-item" href="#">reset numbering</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mark-star">
+                                            <i class="bi bi-star"></i>
+                                        </div>
+                                    </td>
+                                    <td>developer panel survey</td>
+                                    <td>Client ABC</td>
+                                    <td>PRJ-100</td>
+                                    <td>Nikesh Gupta</td>
+                                    <td>27 Jan 2022</td>
+                                    <td>
+                                        <div class="cus-border">
+                                            <i class="bi bi-three-dots"></i>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mark-star">
+                                            <i class="bi bi-star"></i>
+                                        </div>
+                                    </td>
+                                    <td>developer panel survey</td>
+                                    <td>Client ABC</td>
+                                    <td>PRJ-100</td>
+                                    <td>Nikesh Gupta</td>
+                                    <td>27 Jan 2022</td>
+                                    <td>
+                                        <div class="cus-border">
+                                            <i class="bi bi-three-dots"></i>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mark-star">
+                                            <i class="bi bi-star"></i>
+                                        </div>
+                                    </td>
+                                    <td>developer panel survey</td>
+                                    <td>Client ABC</td>
+                                    <td>PRJ-100</td>
+                                    <td>Nikesh Gupta</td>
+                                    <td>27 Jan 2022</td>
+                                    <td>
+                                        <div class="cus-border">
+                                            <i class="bi bi-three-dots"></i>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mark-star">
+                                            <i class="bi bi-star"></i>
+                                        </div>
+                                    </td>
+                                    <td>developer panel survey</td>
+                                    <td>Client ABC</td>
+                                    <td>PRJ-100</td>
+                                    <td>Nikesh Gupta</td>
+                                    <td>27 Jan 2022</td>
+                                    <td>
+                                        <div class="cus-border">
+                                            <i class="bi bi-three-dots"></i>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mark-star">
+                                            <i class="bi bi-star"></i>
+                                        </div>
+                                    </td>
+                                    <td>developer panel survey</td>
+                                    <td>Client ABC</td>
+                                    <td>PRJ-100</td>
+                                    <td>Nikesh Gupta</td>
+                                    <td>27 Jan 2022</td>
+                                    <td>
+                                        <div class="cus-border">
+                                            <i class="bi bi-three-dots"></i>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mark-star">
+                                            <i class="bi bi-star"></i>
+                                        </div>
+                                    </td>
+                                    <td>developer panel survey</td>
+                                    <td>Client ABC</td>
+                                    <td>PRJ-100</td>
+                                    <td>Nikesh Gupta</td>
+                                    <td>27 Jan 2022</td>
+                                    <td>
+                                        <div class="cus-border">
+                                            <i class="bi bi-three-dots"></i>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mark-star">
+                                            <i class="bi bi-star"></i>
+                                        </div>
+                                    </td>
+                                    <td>developer panel survey</td>
+                                    <td>Client ABC</td>
+                                    <td>PRJ-100</td>
+                                    <td>Nikesh Gupta</td>
+                                    <td>27 Jan 2022</td>
+                                    <td>
+                                        <div class="cus-border">
+                                            <i class="bi bi-three-dots"></i>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mark-star">
+                                            <i class="bi bi-star"></i>
+                                        </div>
+                                    </td>
+                                    <td>developer panel survey</td>
+                                    <td>Client ABC</td>
+                                    <td>PRJ-100</td>
+                                    <td>Nikesh Gupta</td>
+                                    <td>27 Jan 2022</td>
+                                    <td>
+                                        <div class="cus-border">
+                                            <i class="bi bi-three-dots"></i>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mark-star">
+                                            <i class="bi bi-star"></i>
+                                        </div>
+                                    </td>
+                                    <td>developer panel survey</td>
+                                    <td>Client ABC</td>
+                                    <td>PRJ-100</td>
+                                    <td>Nikesh Gupta</td>
+                                    <td>27 Jan 2022</td>
+                                    <td>
+                                        <div class="cus-border">
+                                            <i class="bi bi-three-dots"></i>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mark-star">
+                                            <i class="bi bi-star"></i>
+                                        </div>
+                                    </td>
+                                    <td>developer panel survey</td>
+                                    <td>Client ABC</td>
+                                    <td>PRJ-100</td>
+                                    <td>Nikesh Gupta</td>
+                                    <td>27 Jan 2022</td>
+                                    <td>
+                                        <div class="cus-border">
+                                            <i class="bi bi-three-dots"></i>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mark-star">
+                                            <i class="bi bi-star"></i>
+                                        </div>
+                                    </td>
+                                    <td>developer panel survey</td>
+                                    <td>Client ABC</td>
+                                    <td>PRJ-100</td>
+                                    <td>Nikesh Gupta</td>
+                                    <td>27 Jan 2022</td>
+                                    <td>
+                                        <div class="cus-border">
+                                            <i class="bi bi-three-dots"></i>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="mark-star">
+                                            <i class="bi bi-star"></i>
+                                        </div>
+                                    </td>
+                                    <td>developer panel survey</td>
+                                    <td>Client ABC</td>
+                                    <td>PRJ-100</td>
+                                    <td>Nikesh Gupta</td>
+                                    <td>27 Jan 2022</td>
+                                    <td>
+                                        <div class="cus-border">
+                                            <i class="bi bi-three-dots"></i>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!-- main-container -->
+        </div>
+    </main>
+
+    <!-- model -->
+    <div class="modal fade" id="addQuestionPop" tabindex="-1" aria-labelledby="addQuestionPopLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-capitalize" id="addQuestionPopLabel">create new Questionnaire</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- <div class="row justify-content-center">
+                        <div class="col-12"> -->
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label fw-bold ">Questionnaire Title</label>
+                            <input type="email" class="form-control" placeholder="Enter Questionnaire Title">
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label fw-bold ">Client Name</label>
+                            <input type="email" class="form-control" placeholder="Enter Client Name">
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label fw-bold ">Project Number</label>
+                            <input type="email" class="form-control" placeholder="Enter Project Number">
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label fw-bold ">Project Lead/Owner</label>
+                            <input type="email" class="form-control" placeholder="Enter Project Owner Name">
+                        </div>
+
+
+
+                        <button type="submit" class="btn btn-primary btn-large primary-bg text-uppercase w-100">create
+                            new</button>
+                    </form>
+                    <!-- </div>
+                    </div> -->
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- script -->
+      <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

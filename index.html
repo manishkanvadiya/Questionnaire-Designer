@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter A valid password</title>
+</head>
+
+<body onload="passwordCheck()">
+    <script>
+        function passwordCheck() {
+            var password = prompt("Please enter the password.");
+            if (password === "qd1") {
+                window.location = "home.html";
+            } else if (password != '' && password != null) {
+                while (password !== "qd1") {
+                    password = prompt("Please enter the password.");
+                }
+                window.location = "home.html";
+            }
+        }
+        window.onload = passwordCheck;
+    </script>
+</body>
+
+</html>

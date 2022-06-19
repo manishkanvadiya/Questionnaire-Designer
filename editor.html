@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionnaire Designer</title>
+
+    <!-- bs -->
+    <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.3/font/bootstrap-icons.min.css"
+        integrity="sha512-YzwGgFdO1NQw1CZkPoGyRkEnUTxPSbGWXvGiXrWk8IeSqdyci0dEDYdLLjMxq1zCoU0QBa4kHAFiRhUL3z2bow=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- css -->
+    <link rel="stylesheet" href="assets/scss/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <i class="">f<sub>(w)</sub></i>
+                    <span class="d-none d-md-block">Questionnaire Designer</span>
+                    <span class="d-block d-md-none">QD</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+                        <li class="nav-item active-user d-flex align-items-center me-4 mb-2 mb-lg-0">
+                            <p class="mb-0">Users active:</p>
+                            <div class="user-list d-flex align-items-center mx-3">
+                                <div class="user-list-item rounded-circle p-2 text-uppercase primary-color bg-white fw-bold"
+                                    title="Naskenf Gadka">ng</div>
+                                <div class="user-list-item rounded-circle p-2 text-uppercase primary-color bg-white fw-bold"
+                                    title="Naskenf Gadka">at</div>
+                                <div class="user-list-item rounded-circle p-2 text-uppercase primary-color bg-white fw-bold"
+                                    title="Naskenf Gadka">fd</div>
+                            </div>
+                        </li>
+                        <li class="nav-item profile mb-2 mb-lg-0 justify-content-end">
+                            <img src="assets/img/user1.png" alt="">
+                            <span class="mx-3">Arpit Takura</span>
+                            <button class="btn btn-outline-light text-uppercase">logout</button>
+                        </li>
+                        <li class="nav-item dropdown user-dropdown ms-2">
+                            <a class="nav-link dropdown-bordered" href="#" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <i class="bi bi-three-dots-vertical text-white fs-3"></i>
+                            </a>
+                            <div class="dropdown-menu navbar-dropdown preview-list">
+                                <a class="dropdown-item" href="#">export</a>
+                                <a class="dropdown-item" href="#">share</a>
+                                <a class="dropdown-item" href="#">copy</a>
+                                <a class="dropdown-item" href="#">freeze numbering</a>
+                                <a class="dropdown-item" href="#">reset numbering</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- main -->
+    <main>
+        <div class="container-fluid">
+            <div class="row min-vh-100">
+                <div class="col-12 col-lg-2 mb-3 mb-lg-0">
+                    <div class="border border-1 rounded shadow-sm bg-light py-4 px-3 h-100">
+                        <div class="text-uppercase fw-bold title-color mb-3">outline</div>
+                        <ol class="ps-3 m-0">
+                            <li class="mb-3">
+                                <b class="text-uppercase">first section</b>
+                                <div class="title-color fs-small">
+                                    <p class="my-2">Intro to first section</p>
+                                    <ol class="custom-ol ps-0 text-capitalize">
+                                        <li>age</li>
+                                        <li>country</li>
+                                        <li>gender</li>
+                                    </ol>
+                                </div>
+                            </li>
+                            <li class="mb-3">
+                                <b class="text-uppercase">second section</b>
+                                <div class="title-color fs-small">
+                                    <p class="my-2">Intro to first section</p>
+                                    <ol class="custom-ol ps-0 text-capitalize">
+                                        <li>age</li>
+                                        <li>country</li>
+                                        <li>gender</li>
+                                    </ol>
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-7 mb-3 mb-lg-0">
+                    <div class="border border-1 rounded shadow-sm py-4 px-3 h-100">
+
+                        <div class="border-top border-bottom border-1 py-3">
+                            <h5>1. First Section</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 mb-3 mb-lg-0">
+                    <div class="border border-1 rounded shadow-sm bg-light py-4 px-3 h-100">
+                        <div class="comment-wrap bg-white rounded-3 p-3 mb-2">
+                            <div data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+                                aria-controls="collapseExample">
+                                <div class="d-flex align-items-center">
+                                    <div class="short-name primary-bg rounded-circle p-2 fw-bold text-white"
+                                        title="NAS GASDS">NG</div>
+                                    <p class="mb-0 ms-3">This is a comment</p>
+                                    <div class="ms-auto">
+                                        <i class="bi bi-chevron-down primary-color"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center pt-3 fs-small">
+                                <!-- <div class=""> -->
+                                <span class="title-color">27 Jan 2021 16:19</span>
+                                <span class="title-color px-1">|</span>
+                                <span class="primary-color">Q1</span>
+                                <!-- </div> -->
+                                <b class="ms-auto">3 comments</b>
+                            </div>
+
+                            <div class="collapse mt-2" id="collapseExample">
+                                <div class="card card-body">
+                                    Some placeholder content for the collapse component. This panel is hidden by default
+                                    but revealed when the user activates the relevant trigger.
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- script -->
+      <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
